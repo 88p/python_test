@@ -27,4 +27,8 @@ https://addenergie.com/en/smartdc/
 
 https://www.heliox-energy.com/products
 
+https://www.beny.com/product-item/40kw-240kwdc-ev-charging-station/
+
+https://www.microwavejournal.com/articles/36728-addressing-emc-challenges-in-electric-vehicle-supply-equipment
+
 
