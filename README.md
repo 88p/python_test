@@ -31,4 +31,8 @@ https://www.beny.com/product-item/40kw-240kwdc-ev-charging-station/
 
 https://www.microwavejournal.com/articles/36728-addressing-emc-challenges-in-electric-vehicle-supply-equipment
 
+https://www.blinknetwork.com/blinkMap.html#
 
+https://prideev.com/charging-solutions/
+
+https://www.chargepoint.com/en-gb/products/business
