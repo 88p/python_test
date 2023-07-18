@@ -36,3 +36,5 @@ https://www.blinknetwork.com/blinkMap.html#
 https://prideev.com/charging-solutions/
 
 https://www.chargepoint.com/en-gb/products/business
+
+https://rikoubou.hatenablog.com/entry/2021/05/24/182745
