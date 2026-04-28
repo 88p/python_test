@@ -1,0 +1,5 @@
+﻿record_id,rental_id,equipment_id,equipment_name,person_name,department,rental_date,scheduled_return_date,actual_return_date,rental_timestamp,return_timestamp,status
+3d5ad248-8312-41eb-b3df-5549cc5acbc5,f0f21762-fd8d-4034-ab6d-91d488b5a127,EQ006,三脚,aaaaa,test,2026-04-28,2026-05-05,,2026-04-28 11:44:41,,貸出中
+8706e5f3-2721-48d5-a2b9-9f89105de963,f0f21762-fd8d-4034-ab6d-91d488b5a127,EQ001,プロジェクター A,aaaaa,test,2026-04-28,2026-05-05,2026-04-28,2026-04-28 11:44:41,2026-04-28 11:49:55,返却済
+cd560a83-2d9a-4d3c-ad2f-cf27c3e9f6df,6d1e3d2b-ab84-4bde-a1b5-a03e1a08e7f7,EQ004,ノート PC A,yo,B,2026-04-28,2026-05-05,2026-04-29,2026-04-28 11:46:12,2026-04-28 11:49:08,返却済
+f2e0a808-f2cb-4a03-84f6-fafd7781a17b,448f7601-070f-475a-8984-e9987cbb2ef8,EQ010,延長コード（6口）,yu,a,2026-04-28,2026-04-28,,2026-04-28 11:46:40,,貸出中
