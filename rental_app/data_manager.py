@@ -35,6 +35,7 @@ LOG_COLS = [
     "equipment_name",
     "person_name",
     "department",
+    "purpose",              # 借用目的
     "rental_date",
     "scheduled_return_date",
     "actual_return_date",   # 未返却は空文字
@@ -155,6 +156,7 @@ def get_available_equipment() -> pd.DataFrame:
 def add_rental(
     person_name: str,
     department: str,
+    purpose: str,
     rental_date: date,
     scheduled_return_date: date,
     equipment_ids: list,
@@ -170,6 +172,8 @@ def add_rental(
         借用者氏名
     department : str
         借用者部署
+    purpose : str
+        借用目的
     rental_date : date
         貸し出し日
     scheduled_return_date : date
@@ -192,6 +196,7 @@ def add_rental(
                 "equipment_name": equipment_map.get(eq_id, ""),
                 "person_name": person_name,
                 "department": department,
+                "purpose": purpose,
                 "rental_date": str(rental_date),
                 "scheduled_return_date": str(scheduled_return_date),
                 "actual_return_date": "",

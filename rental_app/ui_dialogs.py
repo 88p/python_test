@@ -65,6 +65,13 @@ def rental_dialog() -> None:
             key="rental_return_date",
         )
 
+    purpose = st.text_area(
+        "借用目的 ＊",
+        placeholder="例: 社外プレゼン資料の投影、展示会出展 など",
+        height=80,
+        key="rental_purpose",
+    )
+
     # ── 機材選択 ──────────────────────────────────────────
     # 選択肢を "機材ID | 機材名 [カテゴリ]" 形式で表示
     options = [
@@ -86,7 +93,7 @@ def rental_dialog() -> None:
     # ── 送信ボタン ────────────────────────────────────────
     if st.button("貸し出す", type="primary", use_container_width=True):
         errors = _validate_rental(
-            person_name, department, rental_date, scheduled_return_date, selected_options
+            person_name, department, purpose, rental_date, scheduled_return_date, selected_options
         )
 
         if errors:
@@ -98,6 +105,7 @@ def rental_dialog() -> None:
         data_manager.add_rental(
             person_name=person_name.strip(),
             department=department.strip(),
+            purpose=purpose.strip(),
             rental_date=rental_date,
             scheduled_return_date=scheduled_return_date,
             equipment_ids=equipment_ids,
@@ -112,6 +120,7 @@ def rental_dialog() -> None:
 def _validate_rental(
     person_name: str,
     department: str,
+    purpose: str,
     rental_date: date,
     scheduled_return_date: date,
     selected_options: list,
@@ -129,6 +138,8 @@ def _validate_rental(
         errors.append("名前を入力してください。")
     if not department.strip():
         errors.append("部署を入力してください。")
+    if not purpose.strip():
+        errors.append("借用目的を入力してください。")
     if not selected_options:
         errors.append("機材を 1 つ以上選択してください。")
     if scheduled_return_date < rental_date:
